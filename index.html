@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Timeline Daily</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>Company Timeline Daily</h1>
+      <p class="subtitle">Pick which company came first. Curated 200-company pool.</p>
+      <p id="puzzleDate" class="date"></p>
+    </header>
+
+    <section id="game" class="card">
+      <div class="meta">
+        <span id="roundLabel">Round 1/5</span>
+        <span id="scoreLabel">Score: 0</span>
+      </div>
+
+      <div id="choices" class="choices">
+        <button id="leftChoice" class="choice" type="button"></button>
+        <div class="vs">VS</div>
+        <button id="rightChoice" class="choice" type="button"></button>
+      </div>
+
+      <p id="feedback" class="feedback"></p>
+      <button id="nextBtn" class="next hidden" type="button">Next Round</button>
+    </section>
+
+    <section id="results" class="card hidden">
+      <h2>Daily Results</h2>
+      <p id="finalScore"></p>
+      <p id="emojiLine" class="emoji"></p>
+      <button id="copyBtn" type="button">Copy Share Result</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
