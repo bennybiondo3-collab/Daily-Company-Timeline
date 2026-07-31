@@ -1,0 +1,1002 @@
+[
+  {
+    "name": "Apple Inc.",
+    "founded": 1976,
+    "logo": "https://www.google.com/s2/favicons?domain=apple.com&sz=128"
+  },
+  {
+    "name": "Microsoft",
+    "founded": 1975,
+    "logo": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
+  },
+  {
+    "name": "Google",
+    "founded": 1998,
+    "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
+  },
+  {
+    "name": "Amazon",
+    "founded": 1994,
+    "logo": "https://www.google.com/s2/favicons?domain=amazon.com&sz=128"
+  },
+  {
+    "name": "Meta",
+    "founded": 2004,
+    "logo": "https://www.google.com/s2/favicons?domain=meta.com&sz=128"
+  },
+  {
+    "name": "Netflix",
+    "founded": 1997,
+    "logo": "https://www.google.com/s2/favicons?domain=netflix.com&sz=128"
+  },
+  {
+    "name": "Tesla",
+    "founded": 2003,
+    "logo": "https://www.google.com/s2/favicons?domain=tesla.com&sz=128"
+  },
+  {
+    "name": "NVIDIA",
+    "founded": 1993,
+    "logo": "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128"
+  },
+  {
+    "name": "Intel",
+    "founded": 1968,
+    "logo": "https://www.google.com/s2/favicons?domain=intel.com&sz=128"
+  },
+  {
+    "name": "AMD",
+    "founded": 1969,
+    "logo": "https://www.google.com/s2/favicons?domain=amd.com&sz=128"
+  },
+  {
+    "name": "IBM",
+    "founded": 1911,
+    "logo": "https://www.google.com/s2/favicons?domain=ibm.com&sz=128"
+  },
+  {
+    "name": "Oracle",
+    "founded": 1977,
+    "logo": "https://www.google.com/s2/favicons?domain=oracle.com&sz=128"
+  },
+  {
+    "name": "Salesforce",
+    "founded": 1999,
+    "logo": "https://www.google.com/s2/favicons?domain=salesforce.com&sz=128"
+  },
+  {
+    "name": "Adobe",
+    "founded": 1982,
+    "logo": "https://www.google.com/s2/favicons?domain=adobe.com&sz=128"
+  },
+  {
+    "name": "Cisco",
+    "founded": 1984,
+    "logo": "https://www.google.com/s2/favicons?domain=cisco.com&sz=128"
+  },
+  {
+    "name": "HP",
+    "founded": 1939,
+    "logo": "https://www.google.com/s2/favicons?domain=hp.com&sz=128"
+  },
+  {
+    "name": "Dell",
+    "founded": 1984,
+    "logo": "https://www.google.com/s2/favicons?domain=dell.com&sz=128"
+  },
+  {
+    "name": "Samsung",
+    "founded": 1938,
+    "logo": "https://www.google.com/s2/favicons?domain=samsung.com&sz=128"
+  },
+  {
+    "name": "Sony",
+    "founded": 1946,
+    "logo": "https://www.google.com/s2/favicons?domain=sony.com&sz=128"
+  },
+  {
+    "name": "Panasonic",
+    "founded": 1918,
+    "logo": "https://www.google.com/s2/favicons?domain=panasonic.com&sz=128"
+  },
+  {
+    "name": "LG",
+    "founded": 1947,
+    "logo": "https://www.google.com/s2/favicons?domain=lg.com&sz=128"
+  },
+  {
+    "name": "Xiaomi",
+    "founded": 2010,
+    "logo": "https://www.google.com/s2/favicons?domain=xiaomi.com&sz=128"
+  },
+  {
+    "name": "Huawei",
+    "founded": 1987,
+    "logo": "https://www.google.com/s2/favicons?domain=huawei.com&sz=128"
+  },
+  {
+    "name": "Lenovo",
+    "founded": 1984,
+    "logo": "https://www.google.com/s2/favicons?domain=lenovo.com&sz=128"
+  },
+  {
+    "name": "Alibaba",
+    "founded": 1999,
+    "logo": "https://www.google.com/s2/favicons?domain=alibaba.com&sz=128"
+  },
+  {
+    "name": "Tencent",
+    "founded": 1998,
+    "logo": "https://www.google.com/s2/favicons?domain=tencent.com&sz=128"
+  },
+  {
+    "name": "Baidu",
+    "founded": 2000,
+    "logo": "https://www.google.com/s2/favicons?domain=baidu.com&sz=128"
+  },
+  {
+    "name": "ByteDance",
+    "founded": 2012,
+    "logo": "https://www.google.com/s2/favicons?domain=bytedance.com&sz=128"
+  },
+  {
+    "name": "Uber",
+    "founded": 2009,
+    "logo": "https://www.google.com/s2/favicons?domain=uber.com&sz=128"
+  },
+  {
+    "name": "Airbnb",
+    "founded": 2008,
+    "logo": "https://www.google.com/s2/favicons?domain=airbnb.com&sz=128"
+  },
+  {
+    "name": "Spotify",
+    "founded": 2006,
+    "logo": "https://www.google.com/s2/favicons?domain=spotify.com&sz=128"
+  },
+  {
+    "name": "Shopify",
+    "founded": 2006,
+    "logo": "https://www.google.com/s2/favicons?domain=shopify.com&sz=128"
+  },
+  {
+    "name": "PayPal",
+    "founded": 1998,
+    "logo": "https://www.google.com/s2/favicons?domain=paypal.com&sz=128"
+  },
+  {
+    "name": "Stripe",
+    "founded": 2010,
+    "logo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
+  },
+  {
+    "name": "Block",
+    "founded": 2009,
+    "logo": "https://www.google.com/s2/favicons?domain=block.xyz&sz=128"
+  },
+  {
+    "name": "Visa",
+    "founded": 1958,
+    "logo": "https://www.google.com/s2/favicons?domain=visa.com&sz=128"
+  },
+  {
+    "name": "Mastercard",
+    "founded": 1966,
+    "logo": "https://www.google.com/s2/favicons?domain=mastercard.com&sz=128"
+  },
+  {
+    "name": "American Express",
+    "founded": 1850,
+    "logo": "https://www.google.com/s2/favicons?domain=americanexpress.com&sz=128"
+  },
+  {
+    "name": "JPMorgan Chase",
+    "founded": 2000,
+    "logo": "https://www.google.com/s2/favicons?domain=jpmorganchase.com&sz=128"
+  },
+  {
+    "name": "Bank of America",
+    "founded": 1904,
+    "logo": "https://www.google.com/s2/favicons?domain=bankofamerica.com&sz=128"
+  },
+  {
+    "name": "Wells Fargo",
+    "founded": 1852,
+    "logo": "https://www.google.com/s2/favicons?domain=wellsfargo.com&sz=128"
+  },
+  {
+    "name": "Goldman Sachs",
+    "founded": 1869,
+    "logo": "https://www.google.com/s2/favicons?domain=goldmansachs.com&sz=128"
+  },
+  {
+    "name": "Morgan Stanley",
+    "founded": 1935,
+    "logo": "https://www.google.com/s2/favicons?domain=morganstanley.com&sz=128"
+  },
+  {
+    "name": "Citigroup",
+    "founded": 1998,
+    "logo": "https://www.google.com/s2/favicons?domain=citigroup.com&sz=128"
+  },
+  {
+    "name": "HSBC",
+    "founded": 1865,
+    "logo": "https://www.google.com/s2/favicons?domain=hsbc.com&sz=128"
+  },
+  {
+    "name": "Barclays",
+    "founded": 1690,
+    "logo": "https://www.google.com/s2/favicons?domain=barclays.com&sz=128"
+  },
+  {
+    "name": "Deutsche Bank",
+    "founded": 1870,
+    "logo": "https://www.google.com/s2/favicons?domain=deutsche-bank.com&sz=128"
+  },
+  {
+    "name": "UBS",
+    "founded": 1998,
+    "logo": "https://www.google.com/s2/favicons?domain=ubs.com&sz=128"
+  },
+  {
+    "name": "BlackRock",
+    "founded": 1988,
+    "logo": "https://www.google.com/s2/favicons?domain=blackrock.com&sz=128"
+  },
+  {
+    "name": "Berkshire Hathaway",
+    "founded": 1839,
+    "logo": "https://www.google.com/s2/favicons?domain=berkshirehathaway.com&sz=128"
+  },
+  {
+    "name": "Coca-Cola",
+    "founded": 1892,
+    "logo": "https://www.google.com/s2/favicons?domain=coca-cola.com&sz=128"
+  },
+  {
+    "name": "PepsiCo",
+    "founded": 1965,
+    "logo": "https://www.google.com/s2/favicons?domain=pepsico.com&sz=128"
+  },
+  {
+    "name": "Nestle",
+    "founded": 1866,
+    "logo": "https://www.google.com/s2/favicons?domain=nestle.com&sz=128"
+  },
+  {
+    "name": "Unilever",
+    "founded": 1929,
+    "logo": "https://www.google.com/s2/favicons?domain=unilever.com&sz=128"
+  },
+  {
+    "name": "Procter & Gamble",
+    "founded": 1837,
+    "logo": "https://www.google.com/s2/favicons?domain=pg.com&sz=128"
+  },
+  {
+    "name": "Johnson & Johnson",
+    "founded": 1886,
+    "logo": "https://www.google.com/s2/favicons?domain=jnj.com&sz=128"
+  },
+  {
+    "name": "Mondelez International",
+    "founded": 2012,
+    "logo": "https://www.google.com/s2/favicons?domain=mondelezinternational.com&sz=128"
+  },
+  {
+    "name": "Kraft Heinz",
+    "founded": 2015,
+    "logo": "https://www.google.com/s2/favicons?domain=kraftheinzcompany.com&sz=128"
+  },
+  {
+    "name": "General Mills",
+    "founded": 1928,
+    "logo": "https://www.google.com/s2/favicons?domain=generalmills.com&sz=128"
+  },
+  {
+    "name": "Kellanova",
+    "founded": 1906,
+    "logo": "https://www.google.com/s2/favicons?domain=kellanova.com&sz=128"
+  },
+  {
+    "name": "Mars",
+    "founded": 1911,
+    "logo": "https://www.google.com/s2/favicons?domain=mars.com&sz=128"
+  },
+  {
+    "name": "Danone",
+    "founded": 1919,
+    "logo": "https://www.google.com/s2/favicons?domain=danone.com&sz=128"
+  },
+  {
+    "name": "Heineken",
+    "founded": 1864,
+    "logo": "https://www.google.com/s2/favicons?domain=heineken.com&sz=128"
+  },
+  {
+    "name": "AB InBev",
+    "founded": 2008,
+    "logo": "https://www.google.com/s2/favicons?domain=ab-inbev.com&sz=128"
+  },
+  {
+    "name": "Diageo",
+    "founded": 1997,
+    "logo": "https://www.google.com/s2/favicons?domain=diageo.com&sz=128"
+  },
+  {
+    "name": "Nike",
+    "founded": 1964,
+    "logo": "https://www.google.com/s2/favicons?domain=nike.com&sz=128"
+  },
+  {
+    "name": "Adidas",
+    "founded": 1949,
+    "logo": "https://www.google.com/s2/favicons?domain=adidas.com&sz=128"
+  },
+  {
+    "name": "Puma",
+    "founded": 1948,
+    "logo": "https://www.google.com/s2/favicons?domain=puma.com&sz=128"
+  },
+  {
+    "name": "Under Armour",
+    "founded": 1996,
+    "logo": "https://www.google.com/s2/favicons?domain=underarmour.com&sz=128"
+  },
+  {
+    "name": "Lululemon",
+    "founded": 1998,
+    "logo": "https://www.google.com/s2/favicons?domain=lululemon.com&sz=128"
+  },
+  {
+    "name": "Levi Strauss & Co.",
+    "founded": 1853,
+    "logo": "https://www.google.com/s2/favicons?domain=levi.com&sz=128"
+  },
+  {
+    "name": "H&M",
+    "founded": 1947,
+    "logo": "https://www.google.com/s2/favicons?domain=hm.com&sz=128"
+  },
+  {
+    "name": "Inditex",
+    "founded": 1985,
+    "logo": "https://www.google.com/s2/favicons?domain=inditex.com&sz=128"
+  },
+  {
+    "name": "Uniqlo",
+    "founded": 1984,
+    "logo": "https://www.google.com/s2/favicons?domain=uniqlo.com&sz=128"
+  },
+  {
+    "name": "Gap",
+    "founded": 1969,
+    "logo": "https://www.google.com/s2/favicons?domain=gap.com&sz=128"
+  },
+  {
+    "name": "Patagonia",
+    "founded": 1973,
+    "logo": "https://www.google.com/s2/favicons?domain=patagonia.com&sz=128"
+  },
+  {
+    "name": "IKEA",
+    "founded": 1943,
+    "logo": "https://www.google.com/s2/favicons?domain=ikea.com&sz=128"
+  },
+  {
+    "name": "The Home Depot",
+    "founded": 1978,
+    "logo": "https://www.google.com/s2/favicons?domain=homedepot.com&sz=128"
+  },
+  {
+    "name": "Lowe's",
+    "founded": 1921,
+    "logo": "https://www.google.com/s2/favicons?domain=lowes.com&sz=128"
+  },
+  {
+    "name": "Walmart",
+    "founded": 1962,
+    "logo": "https://www.google.com/s2/favicons?domain=walmart.com&sz=128"
+  },
+  {
+    "name": "Target",
+    "founded": 1902,
+    "logo": "https://www.google.com/s2/favicons?domain=target.com&sz=128"
+  },
+  {
+    "name": "Costco",
+    "founded": 1983,
+    "logo": "https://www.google.com/s2/favicons?domain=costco.com&sz=128"
+  },
+  {
+    "name": "Carrefour",
+    "founded": 1959,
+    "logo": "https://www.google.com/s2/favicons?domain=carrefour.com&sz=128"
+  },
+  {
+    "name": "Tesco",
+    "founded": 1919,
+    "logo": "https://www.google.com/s2/favicons?domain=tesco.com&sz=128"
+  },
+  {
+    "name": "Aldi",
+    "founded": 1946,
+    "logo": "https://www.google.com/s2/favicons?domain=aldi.com&sz=128"
+  },
+  {
+    "name": "Lidl",
+    "founded": 1930,
+    "logo": "https://www.google.com/s2/favicons?domain=lidl.com&sz=128"
+  },
+  {
+    "name": "7-Eleven",
+    "founded": 1927,
+    "logo": "https://www.google.com/s2/favicons?domain=7-eleven.com&sz=128"
+  },
+  {
+    "name": "McDonald's",
+    "founded": 1940,
+    "logo": "https://www.google.com/s2/favicons?domain=mcdonalds.com&sz=128"
+  },
+  {
+    "name": "Burger King",
+    "founded": 1954,
+    "logo": "https://www.google.com/s2/favicons?domain=burgerking.com&sz=128"
+  },
+  {
+    "name": "KFC",
+    "founded": 1952,
+    "logo": "https://www.google.com/s2/favicons?domain=kfc.com&sz=128"
+  },
+  {
+    "name": "Starbucks",
+    "founded": 1971,
+    "logo": "https://www.google.com/s2/favicons?domain=starbucks.com&sz=128"
+  },
+  {
+    "name": "Subway",
+    "founded": 1965,
+    "logo": "https://www.google.com/s2/favicons?domain=subway.com&sz=128"
+  },
+  {
+    "name": "Domino's",
+    "founded": 1960,
+    "logo": "https://www.google.com/s2/favicons?domain=dominos.com&sz=128"
+  },
+  {
+    "name": "Pizza Hut",
+    "founded": 1958,
+    "logo": "https://www.google.com/s2/favicons?domain=pizzahut.com&sz=128"
+  },
+  {
+    "name": "Chipotle",
+    "founded": 1993,
+    "logo": "https://www.google.com/s2/favicons?domain=chipotle.com&sz=128"
+  },
+  {
+    "name": "Yum! Brands",
+    "founded": 1997,
+    "logo": "https://www.google.com/s2/favicons?domain=yum.com&sz=128"
+  },
+  {
+    "name": "Restaurant Brands International",
+    "founded": 2014,
+    "logo": "https://www.google.com/s2/favicons?domain=rbi.com&sz=128"
+  },
+  {
+    "name": "Caterpillar",
+    "founded": 1925,
+    "logo": "https://www.google.com/s2/favicons?domain=caterpillar.com&sz=128"
+  },
+  {
+    "name": "John Deere",
+    "founded": 1837,
+    "logo": "https://www.google.com/s2/favicons?domain=deere.com&sz=128"
+  },
+  {
+    "name": "General Electric",
+    "founded": 1892,
+    "logo": "https://www.google.com/s2/favicons?domain=ge.com&sz=128"
+  },
+  {
+    "name": "Siemens",
+    "founded": 1847,
+    "logo": "https://www.google.com/s2/favicons?domain=siemens.com&sz=128"
+  },
+  {
+    "name": "Honeywell",
+    "founded": 1906,
+    "logo": "https://www.google.com/s2/favicons?domain=honeywell.com&sz=128"
+  },
+  {
+    "name": "3M",
+    "founded": 1902,
+    "logo": "https://www.google.com/s2/favicons?domain=3m.com&sz=128"
+  },
+  {
+    "name": "Boeing",
+    "founded": 1916,
+    "logo": "https://www.google.com/s2/favicons?domain=boeing.com&sz=128"
+  },
+  {
+    "name": "Airbus",
+    "founded": 1970,
+    "logo": "https://www.google.com/s2/favicons?domain=airbus.com&sz=128"
+  },
+  {
+    "name": "Lockheed Martin",
+    "founded": 1995,
+    "logo": "https://www.google.com/s2/favicons?domain=lockheedmartin.com&sz=128"
+  },
+  {
+    "name": "Raytheon",
+    "founded": 1922,
+    "logo": "https://www.google.com/s2/favicons?domain=rtx.com&sz=128"
+  },
+  {
+    "name": "Northrop Grumman",
+    "founded": 1994,
+    "logo": "https://www.google.com/s2/favicons?domain=northropgrumman.com&sz=128"
+  },
+  {
+    "name": "SpaceX",
+    "founded": 2002,
+    "logo": "https://www.google.com/s2/favicons?domain=spacex.com&sz=128"
+  },
+  {
+    "name": "Blue Origin",
+    "founded": 2000,
+    "logo": "https://www.google.com/s2/favicons?domain=blueorigin.com&sz=128"
+  },
+  {
+    "name": "Ford",
+    "founded": 1903,
+    "logo": "https://www.google.com/s2/favicons?domain=ford.com&sz=128"
+  },
+  {
+    "name": "General Motors",
+    "founded": 1908,
+    "logo": "https://www.google.com/s2/favicons?domain=gm.com&sz=128"
+  },
+  {
+    "name": "Toyota",
+    "founded": 1937,
+    "logo": "https://www.google.com/s2/favicons?domain=toyota.com&sz=128"
+  },
+  {
+    "name": "Honda",
+    "founded": 1948,
+    "logo": "https://www.google.com/s2/favicons?domain=honda.com&sz=128"
+  },
+  {
+    "name": "Nissan",
+    "founded": 1933,
+    "logo": "https://www.google.com/s2/favicons?domain=nissan-global.com&sz=128"
+  },
+  {
+    "name": "BMW",
+    "founded": 1916,
+    "logo": "https://www.google.com/s2/favicons?domain=bmw.com&sz=128"
+  },
+  {
+    "name": "Mercedes-Benz",
+    "founded": 1926,
+    "logo": "https://www.google.com/s2/favicons?domain=mercedes-benz.com&sz=128"
+  },
+  {
+    "name": "Volkswagen",
+    "founded": 1937,
+    "logo": "https://www.google.com/s2/favicons?domain=volkswagen.com&sz=128"
+  },
+  {
+    "name": "Audi",
+    "founded": 1909,
+    "logo": "https://www.google.com/s2/favicons?domain=audi.com&sz=128"
+  },
+  {
+    "name": "Porsche",
+    "founded": 1931,
+    "logo": "https://www.google.com/s2/favicons?domain=porsche.com&sz=128"
+  },
+  {
+    "name": "Ferrari",
+    "founded": 1939,
+    "logo": "https://www.google.com/s2/favicons?domain=ferrari.com&sz=128"
+  },
+  {
+    "name": "Hyundai",
+    "founded": 1967,
+    "logo": "https://www.google.com/s2/favicons?domain=hyundai.com&sz=128"
+  },
+  {
+    "name": "Kia",
+    "founded": 1944,
+    "logo": "https://www.google.com/s2/favicons?domain=kia.com&sz=128"
+  },
+  {
+    "name": "Volvo",
+    "founded": 1927,
+    "logo": "https://www.google.com/s2/favicons?domain=volvocars.com&sz=128"
+  },
+  {
+    "name": "Stellantis",
+    "founded": 2021,
+    "logo": "https://www.google.com/s2/favicons?domain=stellantis.com&sz=128"
+  },
+  {
+    "name": "Renault",
+    "founded": 1899,
+    "logo": "https://www.google.com/s2/favicons?domain=renaultgroup.com&sz=128"
+  },
+  {
+    "name": "Peugeot",
+    "founded": 1810,
+    "logo": "https://www.google.com/s2/favicons?domain=peugeot.com&sz=128"
+  },
+  {
+    "name": "Fiat",
+    "founded": 1899,
+    "logo": "https://www.google.com/s2/favicons?domain=fiat.com&sz=128"
+  },
+  {
+    "name": "BYD",
+    "founded": 1995,
+    "logo": "https://www.google.com/s2/favicons?domain=byd.com&sz=128"
+  },
+  {
+    "name": "Rivian",
+    "founded": 2009,
+    "logo": "https://www.google.com/s2/favicons?domain=rivian.com&sz=128"
+  },
+  {
+    "name": "Lucid Motors",
+    "founded": 2007,
+    "logo": "https://www.google.com/s2/favicons?domain=lucidmotors.com&sz=128"
+  },
+  {
+    "name": "ExxonMobil",
+    "founded": 1999,
+    "logo": "https://www.google.com/s2/favicons?domain=exxonmobil.com&sz=128"
+  },
+  {
+    "name": "Chevron",
+    "founded": 1879,
+    "logo": "https://www.google.com/s2/favicons?domain=chevron.com&sz=128"
+  },
+  {
+    "name": "Shell",
+    "founded": 1907,
+    "logo": "https://www.google.com/s2/favicons?domain=shell.com&sz=128"
+  },
+  {
+    "name": "BP",
+    "founded": 1909,
+    "logo": "https://www.google.com/s2/favicons?domain=bp.com&sz=128"
+  },
+  {
+    "name": "TotalEnergies",
+    "founded": 1924,
+    "logo": "https://www.google.com/s2/favicons?domain=totalenergies.com&sz=128"
+  },
+  {
+    "name": "ConocoPhillips",
+    "founded": 2002,
+    "logo": "https://www.google.com/s2/favicons?domain=conocophillips.com&sz=128"
+  },
+  {
+    "name": "Phillips 66",
+    "founded": 2012,
+    "logo": "https://www.google.com/s2/favicons?domain=phillips66.com&sz=128"
+  },
+  {
+    "name": "Schlumberger",
+    "founded": 1926,
+    "logo": "https://www.google.com/s2/favicons?domain=slb.com&sz=128"
+  },
+  {
+    "name": "Halliburton",
+    "founded": 1919,
+    "logo": "https://www.google.com/s2/favicons?domain=halliburton.com&sz=128"
+  },
+  {
+    "name": "Saudi Aramco",
+    "founded": 1933,
+    "logo": "https://www.google.com/s2/favicons?domain=aramco.com&sz=128"
+  },
+  {
+    "name": "Petrobras",
+    "founded": 1953,
+    "logo": "https://www.google.com/s2/favicons?domain=petrobras.com.br&sz=128"
+  },
+  {
+    "name": "PetroChina",
+    "founded": 1999,
+    "logo": "https://www.google.com/s2/favicons?domain=petrochina.com.cn&sz=128"
+  },
+  {
+    "name": "Gazprom",
+    "founded": 1989,
+    "logo": "https://www.google.com/s2/favicons?domain=gazprom.com&sz=128"
+  },
+  {
+    "name": "Rosneft",
+    "founded": 1993,
+    "logo": "https://www.google.com/s2/favicons?domain=rosneft.com&sz=128"
+  },
+  {
+    "name": "LVMH",
+    "founded": 1987,
+    "logo": "https://www.google.com/s2/favicons?domain=lvmh.com&sz=128"
+  },
+  {
+    "name": "Kering",
+    "founded": 1963,
+    "logo": "https://www.google.com/s2/favicons?domain=kering.com&sz=128"
+  },
+  {
+    "name": "Hermes",
+    "founded": 1837,
+    "logo": "https://www.google.com/s2/favicons?domain=hermes.com&sz=128"
+  },
+  {
+    "name": "Chanel",
+    "founded": 1910,
+    "logo": "https://www.google.com/s2/favicons?domain=chanel.com&sz=128"
+  },
+  {
+    "name": "Rolex",
+    "founded": 1905,
+    "logo": "https://www.google.com/s2/favicons?domain=rolex.com&sz=128"
+  },
+  {
+    "name": "Cartier",
+    "founded": 1847,
+    "logo": "https://www.google.com/s2/favicons?domain=cartier.com&sz=128"
+  },
+  {
+    "name": "Tiffany & Co.",
+    "founded": 1837,
+    "logo": "https://www.google.com/s2/favicons?domain=tiffany.com&sz=128"
+  },
+  {
+    "name": "Richemont",
+    "founded": 1988,
+    "logo": "https://www.google.com/s2/favicons?domain=richemont.com&sz=128"
+  },
+  {
+    "name": "Estee Lauder",
+    "founded": 1946,
+    "logo": "https://www.google.com/s2/favicons?domain=elcompanies.com&sz=128"
+  },
+  {
+    "name": "L'Oreal",
+    "founded": 1909,
+    "logo": "https://www.google.com/s2/favicons?domain=loreal.com&sz=128"
+  },
+  {
+    "name": "Shiseido",
+    "founded": 1872,
+    "logo": "https://www.google.com/s2/favicons?domain=shiseido.com&sz=128"
+  },
+  {
+    "name": "Pfizer",
+    "founded": 1849,
+    "logo": "https://www.google.com/s2/favicons?domain=pfizer.com&sz=128"
+  },
+  {
+    "name": "Moderna",
+    "founded": 2010,
+    "logo": "https://www.google.com/s2/favicons?domain=modernatx.com&sz=128"
+  },
+  {
+    "name": "BioNTech",
+    "founded": 2008,
+    "logo": "https://www.google.com/s2/favicons?domain=biontech.de&sz=128"
+  },
+  {
+    "name": "Merck & Co.",
+    "founded": 1891,
+    "logo": "https://www.google.com/s2/favicons?domain=merck.com&sz=128"
+  },
+  {
+    "name": "Novartis",
+    "founded": 1996,
+    "logo": "https://www.google.com/s2/favicons?domain=novartis.com&sz=128"
+  },
+  {
+    "name": "Roche",
+    "founded": 1896,
+    "logo": "https://www.google.com/s2/favicons?domain=roche.com&sz=128"
+  },
+  {
+    "name": "Sanofi",
+    "founded": 1973,
+    "logo": "https://www.google.com/s2/favicons?domain=sanofi.com&sz=128"
+  },
+  {
+    "name": "AstraZeneca",
+    "founded": 1999,
+    "logo": "https://www.google.com/s2/favicons?domain=astrazeneca.com&sz=128"
+  },
+  {
+    "name": "GSK",
+    "founded": 2000,
+    "logo": "https://www.google.com/s2/favicons?domain=gsk.com&sz=128"
+  },
+  {
+    "name": "Bayer",
+    "founded": 1863,
+    "logo": "https://www.google.com/s2/favicons?domain=bayer.com&sz=128"
+  },
+  {
+    "name": "AbbVie",
+    "founded": 2013,
+    "logo": "https://www.google.com/s2/favicons?domain=abbvie.com&sz=128"
+  },
+  {
+    "name": "Amgen",
+    "founded": 1980,
+    "logo": "https://www.google.com/s2/favicons?domain=amgen.com&sz=128"
+  },
+  {
+    "name": "Eli Lilly",
+    "founded": 1876,
+    "logo": "https://www.google.com/s2/favicons?domain=lilly.com&sz=128"
+  },
+  {
+    "name": "Bristol Myers Squibb",
+    "founded": 1989,
+    "logo": "https://www.google.com/s2/favicons?domain=bms.com&sz=128"
+  },
+  {
+    "name": "CVS Health",
+    "founded": 1963,
+    "logo": "https://www.google.com/s2/favicons?domain=cvshealth.com&sz=128"
+  },
+  {
+    "name": "Walgreens",
+    "founded": 1901,
+    "logo": "https://www.google.com/s2/favicons?domain=walgreens.com&sz=128"
+  },
+  {
+    "name": "UnitedHealth Group",
+    "founded": 1977,
+    "logo": "https://www.google.com/s2/favicons?domain=unitedhealthgroup.com&sz=128"
+  },
+  {
+    "name": "Cigna",
+    "founded": 1982,
+    "logo": "https://www.google.com/s2/favicons?domain=cigna.com&sz=128"
+  },
+  {
+    "name": "Humana",
+    "founded": 1961,
+    "logo": "https://www.google.com/s2/favicons?domain=humana.com&sz=128"
+  },
+  {
+    "name": "Aetna",
+    "founded": 1853,
+    "logo": "https://www.google.com/s2/favicons?domain=aetna.com&sz=128"
+  },
+  {
+    "name": "FedEx",
+    "founded": 1971,
+    "logo": "https://www.google.com/s2/favicons?domain=fedex.com&sz=128"
+  },
+  {
+    "name": "UPS",
+    "founded": 1907,
+    "logo": "https://www.google.com/s2/favicons?domain=ups.com&sz=128"
+  },
+  {
+    "name": "DHL",
+    "founded": 1969,
+    "logo": "https://www.google.com/s2/favicons?domain=dhl.com&sz=128"
+  },
+  {
+    "name": "Maersk",
+    "founded": 1904,
+    "logo": "https://www.google.com/s2/favicons?domain=maersk.com&sz=128"
+  },
+  {
+    "name": "Delta Air Lines",
+    "founded": 1925,
+    "logo": "https://www.google.com/s2/favicons?domain=delta.com&sz=128"
+  },
+  {
+    "name": "American Airlines",
+    "founded": 1930,
+    "logo": "https://www.google.com/s2/favicons?domain=aa.com&sz=128"
+  },
+  {
+    "name": "United Airlines",
+    "founded": 1926,
+    "logo": "https://www.google.com/s2/favicons?domain=united.com&sz=128"
+  },
+  {
+    "name": "Southwest Airlines",
+    "founded": 1967,
+    "logo": "https://www.google.com/s2/favicons?domain=southwest.com&sz=128"
+  },
+  {
+    "name": "Ryanair",
+    "founded": 1984,
+    "logo": "https://www.google.com/s2/favicons?domain=ryanair.com&sz=128"
+  },
+  {
+    "name": "easyJet",
+    "founded": 1995,
+    "logo": "https://www.google.com/s2/favicons?domain=easyjet.com&sz=128"
+  },
+  {
+    "name": "Emirates",
+    "founded": 1985,
+    "logo": "https://www.google.com/s2/favicons?domain=emirates.com&sz=128"
+  },
+  {
+    "name": "Qatar Airways",
+    "founded": 1993,
+    "logo": "https://www.google.com/s2/favicons?domain=qatarairways.com&sz=128"
+  },
+  {
+    "name": "Singapore Airlines",
+    "founded": 1972,
+    "logo": "https://www.google.com/s2/favicons?domain=singaporeair.com&sz=128"
+  },
+  {
+    "name": "Marriott International",
+    "founded": 1927,
+    "logo": "https://www.google.com/s2/favicons?domain=marriott.com&sz=128"
+  },
+  {
+    "name": "Hilton",
+    "founded": 1919,
+    "logo": "https://www.google.com/s2/favicons?domain=hilton.com&sz=128"
+  },
+  {
+    "name": "Hyatt",
+    "founded": 1957,
+    "logo": "https://www.google.com/s2/favicons?domain=hyatt.com&sz=128"
+  },
+  {
+    "name": "Accor",
+    "founded": 1967,
+    "logo": "https://www.google.com/s2/favicons?domain=accor.com&sz=128"
+  },
+  {
+    "name": "Booking Holdings",
+    "founded": 1997,
+    "logo": "https://www.google.com/s2/favicons?domain=bookingholdings.com&sz=128"
+  },
+  {
+    "name": "Expedia Group",
+    "founded": 1996,
+    "logo": "https://www.google.com/s2/favicons?domain=expediagroup.com&sz=128"
+  },
+  {
+    "name": "Tripadvisor",
+    "founded": 2000,
+    "logo": "https://www.google.com/s2/favicons?domain=tripadvisor.com&sz=128"
+  },
+  {
+    "name": "Disney",
+    "founded": 1923,
+    "logo": "https://www.google.com/s2/favicons?domain=disney.com&sz=128"
+  },
+  {
+    "name": "Comcast",
+    "founded": 1963,
+    "logo": "https://www.google.com/s2/favicons?domain=comcast.com&sz=128"
+  },
+  {
+    "name": "Nintendo",
+    "founded": 1889,
+    "logo": "https://www.google.com/s2/favicons?domain=nintendo.com&sz=128"
+  },
+  {
+    "name": "Electronic Arts",
+    "founded": 1982,
+    "logo": "https://www.google.com/s2/favicons?domain=ea.com&sz=128"
+  }
+]
