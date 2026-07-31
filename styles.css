@@ -1,10 +1,10 @@
 :root {
   color-scheme: dark;
-  --bg: #0f1115;
-  --card: #1a1f2a;
+  --bg: #080b12;
+  --card: #121827;
   --text: #f3f6fc;
   --muted: #a8b3c7;
-  --accent: #4f8cff;
+  --accent: #5f8dff;
   --good: #2da44e;
   --bad: #d1242f;
 }
@@ -15,7 +15,10 @@
 
 body {
   margin: 0;
-  background: var(--bg);
+  background:
+    radial-gradient(1000px 500px at 20% -20%, #23314f 0%, rgba(35, 49, 79, 0) 55%),
+    radial-gradient(800px 400px at 90% 0%, #1f2540 0%, rgba(31, 37, 64, 0) 60%),
+    var(--bg);
   color: var(--text);
   font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
 }
@@ -28,7 +31,7 @@ body {
 
 .header {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 h1 {
@@ -43,8 +46,10 @@ h1 {
 
 .card {
   background: var(--card);
-  border-radius: 12px;
-  padding: 1rem;
+  border-radius: 18px;
+  border: 1px solid #2a3550;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.32);
+  padding: 1.1rem;
   margin-top: 1rem;
 }
 
@@ -63,19 +68,20 @@ h1 {
 }
 
 .choice {
-  background: #111622;
-  border: 1px solid #2b3447;
-  border-radius: 12px;
-  padding: 1rem;
-  min-height: 160px;
+  background: linear-gradient(180deg, #111a2e, #101625 70%);
+  border: 1px solid #2e3d5a;
+  border-radius: 16px;
+  padding: 1.1rem;
+  min-height: 220px;
   color: var(--text);
   cursor: pointer;
-  text-align: left;
+  text-align: center;
   transition: transform 180ms ease, border-color 220ms ease, box-shadow 220ms ease, opacity 200ms ease;
 }
 
 .choice:hover:not([disabled]) {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
 }
 
 .choice:active:not([disabled]) {
@@ -96,7 +102,7 @@ h1 {
 }
 
 .choice.selected {
-  box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.25);
+  box-shadow: 0 0 0 2px rgba(95, 141, 255, 0.42);
 }
 
 .choice.answer-good {
@@ -117,41 +123,65 @@ h1 {
 
 .company {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.7rem;
+  justify-content: center;
+  gap: 0.8rem;
+  height: 100%;
 }
 
 .logo,
 .logo-fallback {
-  width: 46px;
-  height: 46px;
-  border-radius: 10px;
-  flex: 0 0 46px;
+  width: 74px;
+  height: 74px;
+  border-radius: 16px;
+  flex: 0 0 74px;
+}
+
+.logo-wrap {
+  width: 74px;
+  height: 74px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #d6deef;
 }
 
 .logo {
   object-fit: contain;
-  background: white;
+  padding: 0.2rem;
+  background: transparent;
 }
 
 .logo-fallback {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #2b3447;
+  background: #3b4c6f;
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .company-name {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 650;
+  line-height: 1.35;
 }
 
 .vs {
   color: var(--muted);
   font-weight: 700;
+  letter-spacing: 0.14rem;
+}
+
+.tap-hint {
+  color: #91a3c4;
+  font-size: 0.78rem;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
 }
 
 .feedback {
@@ -198,13 +228,13 @@ h1 {
 
 @keyframes badFlash {
   0% {
-    background: #111622;
+    background: linear-gradient(180deg, #111a2e, #101625 70%);
   }
   25% {
     background: rgba(209, 36, 47, 0.25);
   }
   100% {
-    background: #111622;
+    background: linear-gradient(180deg, #111a2e, #101625 70%);
   }
 }
 

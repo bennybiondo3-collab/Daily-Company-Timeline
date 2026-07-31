@@ -6,7 +6,7 @@ A 5-round daily guessing game where the player picks which company was founded f
 
 - Deterministic daily puzzle generation (same date = same rounds)
 - Exactly 5 rounds per day (2 companies per round)
-- 500-company dataset (`data/companies.json`) for 100 days of unique 5-round puzzles
+- Curated 200-company mainstream dataset (`data/companies.json`)
 - Score tracking and one-click share text
 - Logo URLs included for each company (`logo` field) with automatic initials fallback if an image fails to load
 

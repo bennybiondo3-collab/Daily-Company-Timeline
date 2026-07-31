@@ -1,5 +1,5 @@
 const TOTAL_ROUNDS = 5;
-const STORAGE_PREFIX = "company-timeline-daily-v2";
+const STORAGE_PREFIX = "company-timeline-daily-v3";
 
 const puzzleDateEl = document.getElementById("puzzleDate");
 const roundLabelEl = document.getElementById("roundLabel");
@@ -83,14 +83,17 @@ function renderCompany(company) {
   const safeName = escapeHtml(company.name);
   const fallback = initials(company.name);
   const logoHtml = company.logo
-    ? `<img class="logo" src="${encodeURI(company.logo)}" alt="${safeName} logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false;">
-       <span class="logo-fallback" hidden aria-hidden="true">${fallback}</span>`
+    ? `<span class="logo-wrap">
+         <img class="logo" src="${encodeURI(company.logo)}" alt="${safeName} logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false;">
+         <span class="logo-fallback" hidden aria-hidden="true">${fallback}</span>
+       </span>`
     : `<span class="logo-fallback" aria-hidden="true">${fallback}</span>`;
 
   return `
     <span class="company">
       ${logoHtml}
       <span class="company-name">${safeName}</span>
+      <span class="tap-hint">Tap to choose</span>
     </span>
   `;
 }
