@@ -81,13 +81,11 @@ function escapeHtml(text) {
 
 function renderCompany(company) {
   const safeName = escapeHtml(company.name);
-  const fallback = initials(company.name);
   const logoHtml = company.logo
     ? `<span class="logo-wrap">
-         <img class="logo" src="${encodeURI(company.logo)}" alt="${safeName} logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false;">
-         <span class="logo-fallback" hidden aria-hidden="true">${fallback}</span>
+         <img class="logo" src="${encodeURI(company.logo)}" alt="${safeName} logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.logo-wrap').style.display='none';">
        </span>`
-    : `<span class="logo-fallback" aria-hidden="true">${fallback}</span>`;
+    : "";
 
   return `
     <span class="company">
