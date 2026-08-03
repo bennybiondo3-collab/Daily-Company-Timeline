@@ -207,6 +207,11 @@ h1 {
   letter-spacing: 0.1rem;
 }
 
+.community {
+  color: var(--muted);
+  margin: 0.45rem 0 0.2rem;
+}
+
 .hidden {
   display: none;
 }

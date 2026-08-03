@@ -11,10 +11,16 @@ const nextBtn = document.getElementById("nextBtn");
 const gameSection = document.getElementById("game");
 const resultsSection = document.getElementById("results");
 const finalScoreEl = document.getElementById("finalScore");
+const communityStatsEl = document.getElementById("communityStats");
 const emojiLineEl = document.getElementById("emojiLine");
 const copyBtn = document.getElementById("copyBtn");
 
 let gameState = null;
+
+const COMMUNITY_NAMESPACE = "company-timeline-daily-v1";
+const COMMUNITY_PLAYS_KEY = "plays";
+const COMMUNITY_SCORE_KEY = "score-total";
+const COMMUNITY_SUBMIT_PREFIX = `${STORAGE_PREFIX}:community-submitted`;
 
 function toLocalDateKey(date = new Date()) {
   const y = date.getFullYear();
@@ -178,13 +184,84 @@ function answerRound(chosenSide) {
   persistState();
 }
 
+
+function communitySubmitKey(dateKey) {
+  return `${COMMUNITY_SUBMIT_PREFIX}:${dateKey}`;
+}
+
+async function countApiGet(key) {
+  const url = `https://api.countapi.xyz/get/${encodeURIComponent(COMMUNITY_NAMESPACE)}/${encodeURIComponent(key)}`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`CountAPI get failed for ${key}.`);
+  }
+  const payload = await response.json();
+  return typeof payload.value === "number" ? payload.value : 0;
+}
+
+async function countApiHit(key, amount) {
+  const url = `https://api.countapi.xyz/hit/${encodeURIComponent(COMMUNITY_NAMESPACE)}/${encodeURIComponent(key)}?amount=${encodeURIComponent(String(amount))}`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`CountAPI hit failed for ${key}.`);
+  }
+  const payload = await response.json();
+  return typeof payload.value === "number" ? payload.value : 0;
+}
+
+async function getCommunityAverage() {
+  const [plays, totalScore] = await Promise.all([
+    countApiGet(COMMUNITY_PLAYS_KEY),
+    countApiGet(COMMUNITY_SCORE_KEY),
+  ]);
+
+  if (plays <= 0) {
+    return { plays: 0, average: 0 };
+  }
+
+  return {
+    plays,
+    average: totalScore / plays,
+  };
+}
+
+async function recordCommunityResultIfNeeded() {
+  const key = communitySubmitKey(gameState.dateKey);
+  if (localStorage.getItem(key) === "1") {
+    return;
+  }
+
+  await Promise.all([
+    countApiHit(COMMUNITY_PLAYS_KEY, 1),
+    countApiHit(COMMUNITY_SCORE_KEY, gameState.score),
+  ]);
+  localStorage.setItem(key, "1");
+}
+
+async function updateCommunityStats() {
+  if (!communityStatsEl) {
+    return;
+  }
+
+  communityStatsEl.textContent = "Community average: loading...";
+
+  try {
+    await recordCommunityResultIfNeeded();
+    const stats = await getCommunityAverage();
+    communityStatsEl.textContent = `Community average: ${stats.average.toFixed(2)}/${TOTAL_ROUNDS} from ${stats.plays} daily plays`;
+  } catch (error) {
+    communityStatsEl.textContent = "Community average unavailable right now.";
+  }
+}
+
 function showResults() {
   gameSection.classList.add("hidden");
   resultsSection.classList.remove("hidden");
 
   finalScoreEl.textContent = `You scored ${gameState.score}/${TOTAL_ROUNDS}.`;
-  const emoji = gameState.results.map((v) => (v ? "🟩" : "🟥")).join("");
+  const emoji = gameState.results.map((v) => (v ? "\uD83D\uDFE9" : "\uD83D\uDFE5")).join("");
   emojiLineEl.textContent = emoji;
+  updateCommunityStats();
 }
 
 function persistState() {

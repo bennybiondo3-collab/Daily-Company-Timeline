@@ -8,7 +8,8 @@ A 5-round daily guessing game where the player picks which company was founded f
 - Exactly 5 rounds per day (2 companies per round)
 - Curated 200-company mainstream dataset (`data/companies.json`)
 - Score tracking and one-click share text
-- Logo URLs included for each company (`logo` field) with automatic initials fallback if an image fails to load
+- Logo URLs included for each company (`logo` field)
+- Community daily average score tracking via CountAPI (global plays + score average)
 
 ## Data shape
 
