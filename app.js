@@ -21,6 +21,7 @@ const COMMUNITY_NAMESPACE = "company-timeline-daily-v1";
 const COMMUNITY_PLAYS_KEY = "plays";
 const COMMUNITY_SCORE_KEY = "score-total";
 const COMMUNITY_SUBMIT_PREFIX = `${STORAGE_PREFIX}:community-submitted`;
+const COMMUNITY_TIMEOUT_MS = 4000;
 
 function toLocalDateKey(date = new Date()) {
   const y = date.getFullYear();
@@ -189,23 +190,31 @@ function communitySubmitKey(dateKey) {
   return `${COMMUNITY_SUBMIT_PREFIX}:${dateKey}`;
 }
 
+
+async function fetchJsonWithTimeout(url) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), COMMUNITY_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(url, { signal: controller.signal });
+    if (!response.ok) {
+      throw new Error(`Request failed: ${response.status}`);
+    }
+    return await response.json();
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
 async function countApiGet(key) {
   const url = `https://api.countapi.xyz/get/${encodeURIComponent(COMMUNITY_NAMESPACE)}/${encodeURIComponent(key)}`;
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`CountAPI get failed for ${key}.`);
-  }
-  const payload = await response.json();
+  const payload = await fetchJsonWithTimeout(url);
   return typeof payload.value === "number" ? payload.value : 0;
 }
 
 async function countApiHit(key, amount) {
   const url = `https://api.countapi.xyz/hit/${encodeURIComponent(COMMUNITY_NAMESPACE)}/${encodeURIComponent(key)}?amount=${encodeURIComponent(String(amount))}`;
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`CountAPI hit failed for ${key}.`);
-  }
-  const payload = await response.json();
+  const payload = await fetchJsonWithTimeout(url);
   return typeof payload.value === "number" ? payload.value : 0;
 }
 
