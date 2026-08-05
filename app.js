@@ -1,6 +1,10 @@
 const TOTAL_ROUNDS = 5;
 const STORAGE_PREFIX = "company-timeline-daily-v3";
 
+const SUPABASE_URL = "https://hcsktwutnfsmysrjvqrx.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhjc2t0d3V0bmZzbXlzcmp2cXJ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU3Njc5NzcsImV4cCI6MjEwMTM0Mzk3N30.ejLFpYBGPNwDqIiE6tOpaUxhGA_-sLMhJpfYBaDV3ug";
+
+
 const puzzleDateEl = document.getElementById("puzzleDate");
 const roundLabelEl = document.getElementById("roundLabel");
 const scoreLabelEl = document.getElementById("scoreLabel");
@@ -17,11 +21,7 @@ const copyBtn = document.getElementById("copyBtn");
 
 let gameState = null;
 
-const COMMUNITY_NAMESPACE = "company-timeline-daily-v1";
-const COMMUNITY_PLAYS_KEY = "plays";
-const COMMUNITY_SCORE_KEY = "score-total";
-const COMMUNITY_SUBMIT_PREFIX = `${STORAGE_PREFIX}:community-submitted`;
-const COMMUNITY_TIMEOUT_MS = 4000;
+
 
 function toLocalDateKey(date = new Date()) {
   const y = date.getFullYear();
@@ -186,47 +186,45 @@ function answerRound(chosenSide) {
 }
 
 
+
 function communitySubmitKey(dateKey) {
   return `${COMMUNITY_SUBMIT_PREFIX}:${dateKey}`;
 }
 
+async function supabaseFetch(path, options = {}) {
+  const response = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
+    ...options,
+    headers: {
+      apikey: SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+      "Content-Type": "application/json",
+      ...(options.headers || {}),
+    },
+  });
 
-async function fetchJsonWithTimeout(url) {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), COMMUNITY_TIMEOUT_MS);
-
-  try {
-    const response = await fetch(url, { signal: controller.signal });
-    if (!response.ok) {
-      throw new Error(`Request failed: ${response.status}`);
-    }
-    return await response.json();
-  } finally {
-    clearTimeout(timeoutId);
+  if (!response.ok) {
+    throw new Error(`Supabase request failed: ${response.status}`);
   }
-}
 
-async function countApiGet(key) {
-  const url = `https://api.countapi.xyz/get/${encodeURIComponent(COMMUNITY_NAMESPACE)}/${encodeURIComponent(key)}`;
-  const payload = await fetchJsonWithTimeout(url);
-  return typeof payload.value === "number" ? payload.value : 0;
-}
+  const contentType = response.headers.get("content-type") || "";
+  if (contentType.indexOf("application/json") !== -1) {
+    return response.json();
+  }
 
-async function countApiHit(key, amount) {
-  const url = `https://api.countapi.xyz/hit/${encodeURIComponent(COMMUNITY_NAMESPACE)}/${encodeURIComponent(key)}?amount=${encodeURIComponent(String(amount))}`;
-  const payload = await fetchJsonWithTimeout(url);
-  return typeof payload.value === "number" ? payload.value : 0;
+  return null;
 }
 
 async function getCommunityAverage() {
-  const [plays, totalScore] = await Promise.all([
-    countApiGet(COMMUNITY_PLAYS_KEY),
-    countApiGet(COMMUNITY_SCORE_KEY),
-  ]);
+  const rows = await supabaseFetch(
+    `scores?select=score&game_date=eq.${encodeURIComponent(gameState.dateKey)}`
+  );
 
-  if (plays <= 0) {
+  const plays = rows.length;
+  if (plays === 0) {
     return { plays: 0, average: 0 };
   }
+
+  const totalScore = rows.reduce((sum, row) => sum + Number(row.score || 0), 0);
 
   return {
     plays,
@@ -240,10 +238,17 @@ async function recordCommunityResultIfNeeded() {
     return;
   }
 
-  await Promise.all([
-    countApiHit(COMMUNITY_PLAYS_KEY, 1),
-    countApiHit(COMMUNITY_SCORE_KEY, gameState.score),
-  ]);
+  await supabaseFetch("scores", {
+    method: "POST",
+    headers: {
+      Prefer: "return=minimal",
+    },
+    body: JSON.stringify({
+      game_date: gameState.dateKey,
+      score: gameState.score,
+    }),
+  });
+
   localStorage.setItem(key, "1");
 }
 
@@ -257,12 +262,12 @@ async function updateCommunityStats() {
   try {
     await recordCommunityResultIfNeeded();
     const stats = await getCommunityAverage();
-    communityStatsEl.textContent = `Community average: ${stats.average.toFixed(2)}/${TOTAL_ROUNDS} from ${stats.plays} daily plays`;
+    communityStatsEl.textContent =
+      `Community average: ${stats.average.toFixed(2)}/${TOTAL_ROUNDS} from ${stats.plays} plays today`;
   } catch (error) {
     communityStatsEl.textContent = "Community average unavailable right now.";
   }
 }
-
 function showResults() {
   gameSection.classList.add("hidden");
   resultsSection.classList.remove("hidden");
