@@ -3,7 +3,7 @@ const STORAGE_PREFIX = "company-timeline-daily-v3";
 
 const SUPABASE_URL = "https://hcsktwutnfsmysrjvqrx.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhjc2t0d3V0bmZzbXlzcmp2cXJ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU3Njc5NzcsImV4cCI6MjEwMTM0Mzk3N30.ejLFpYBGPNwDqIiE6tOpaUxhGA_-sLMhJpfYBaDV3ug";
-
+const COMMUNITY_SUBMIT_PREFIX = "community-submitted";
 
 const puzzleDateEl = document.getElementById("puzzleDate");
 const roundLabelEl = document.getElementById("roundLabel");
@@ -20,8 +20,6 @@ const emojiLineEl = document.getElementById("emojiLine");
 const copyBtn = document.getElementById("copyBtn");
 
 let gameState = null;
-
-
 
 function toLocalDateKey(date = new Date()) {
   const y = date.getFullYear();
@@ -66,15 +64,6 @@ function shuffle(items, rng) {
     arr[j] = tmp;
   }
   return arr;
-}
-
-function initials(name) {
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((w) => w[0].toUpperCase())
-    .join("");
 }
 
 function escapeHtml(text) {
@@ -185,8 +174,6 @@ function answerRound(chosenSide) {
   persistState();
 }
 
-
-
 function communitySubmitKey(dateKey) {
   return `${COMMUNITY_SUBMIT_PREFIX}:${dateKey}`;
 }
@@ -268,6 +255,7 @@ async function updateCommunityStats() {
     communityStatsEl.textContent = "Community average unavailable right now.";
   }
 }
+
 function showResults() {
   gameSection.classList.add("hidden");
   resultsSection.classList.remove("hidden");
