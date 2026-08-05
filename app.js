@@ -346,6 +346,8 @@ copyBtn.addEventListener("click", async () => {
     `Company Timeline Daily ${gameState.dateKey}`,
     `Score: ${gameState.score}/${TOTAL_ROUNDS}`,
     gameState.results.map((v) => (v ? "🟩" : "🟥")).join(""),
+    "",
+    "https://bennybiondo3-collab.github.io/Daily-Company-Timeline/",
   ].join("\n");
   await navigator.clipboard.writeText(share);
   copyBtn.textContent = "Copied!";
