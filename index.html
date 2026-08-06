@@ -7,14 +7,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-orb orb-3" aria-hidden="true"></div>
+
   <main class="app">
     <header class="header">
+      <p class="kicker">DAILY CHALLENGE</p>
       <h1>Company Timeline Daily</h1>
-      <p class="subtitle">Pick which company came first. Curated 200-company pool.</p>
+      <p class="subtitle">Pick which company came first. 5 rounds. One puzzle per day.</p>
       <p id="puzzleDate" class="date"></p>
     </header>
 
-    <section id="game" class="card">
+    <section id="game" class="card glass">
       <div class="meta">
         <span id="roundLabel">Round 1/5</span>
         <span id="scoreLabel">Score: 0</span>
@@ -30,7 +35,7 @@
       <button id="nextBtn" class="next hidden" type="button">Next Round</button>
     </section>
 
-    <section id="results" class="card hidden">
+    <section id="results" class="card glass hidden">
       <h2>Daily Results</h2>
       <p id="finalScore"></p>
       <p id="communityStats" class="community"></p>
